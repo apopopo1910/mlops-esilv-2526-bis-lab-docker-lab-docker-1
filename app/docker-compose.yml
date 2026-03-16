@@ -1,0 +1,19 @@
+services:
+  back:
+    image: apopopopic/esilv-mlops_lab-docker-back-img:latest
+    environment:
+      - CURRENT_ENVIRONMENT=DEV
+    expose:
+      - "5000"
+    #volumes:
+      #- shared-data:/data
+
+  front:
+    image: apopopopic/esilv-mlops_lab-docker-front-img:latest
+    ports:
+      - "8083:80"
+    #volumes:
+      #- shared-data:/var/data
+
+#volumes:
+  #shared-data:
