@@ -1,0 +1,2 @@
+docker run --rm -d --name lab-docker-back-container -e CURRENT_ENVIRONMENT=DEV -p 5000:5000 apopopopic/esilv-mlops_lab-docker-back-img:latest
+docker run --rm --name lab-docker-front-container -p 8083:80 -it lab-docker-front-img
